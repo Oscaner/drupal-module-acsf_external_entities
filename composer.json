@@ -1,0 +1,23 @@
+{
+    "name": "drupal/acsf_external_entities",
+    "type": "drupal-module",
+    "description": "Allow using ACSF remote entities, for example through a ACSF API interface.",
+    "authors": [
+        {
+            "name": "Kang Miao",
+            "email": "kang@ciandt.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/external_entities": "^2.0"
+    },
+    "extra": {
+        "patches": {
+            "drupal/external_entities": {
+                "https://drupal.org/node/3081256": "https://www.drupal.org/files/issues/2019-12-24/external_entities-load_all_external_entities_load_multiple-3081256-5.patch",
+                "https://drupal.org/node/3202105": "https://www.drupal.org/files/issues/2021-03-07/3202105-2.patch"
+            }
+        }
+    }
+}
